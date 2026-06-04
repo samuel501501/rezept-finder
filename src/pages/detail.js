@@ -94,11 +94,6 @@ export async function renderDetail(app, id) {
                   : '<li class="rd-step"><span class="rd-step-n">–</span><p class="rd-step-text">Keine Schritte verfügbar.</p></li>'}
               </ol>
             </section>
-
-            ${r.sourceUrl
-              ? `<a class="ghost-btn rd-source" href="${r.sourceUrl}" target="_blank" rel="noopener noreferrer">
-                   ${icon('link', 'icon-sm')} Originalrezept ansehen</a>`
-              : ''}
           </main>
 
           <aside class="rd-sidebar">

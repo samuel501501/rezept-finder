@@ -3,7 +3,7 @@ export default async function handler(req, res) {
   const params = { ...req.query };
   delete params.path;
  
-  params.apiKey = process.env.VITE_SPOONACULAR_KEY;
+  params.apiKey = process.env.SPOONACULAR_KEY;
  
   const query = new URLSearchParams(params).toString();
   const url = `https://api.spoonacular.com/${path}?${query}`;
